@@ -49,8 +49,8 @@ class EdimaxDevice:
           reply = result.read()
 
           root = ET.fromstring(reply)
-          wattsElement = root.find('.//Device.System.Power.NowCurrent')
-          ampsElement = root.find('.//Device.System.Power.NowPower')
+          ampsElement = root.find('.//Device.System.Power.NowCurrent')
+          wattsElement = root.find('.//Device.System.Power.NowPower')
 
 
           if wattsElement is not None:
