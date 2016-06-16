@@ -55,7 +55,7 @@ class EdimaxDevice:
 
           if wattsElement is not None:
                if ampsElement is not None:
-                    return {'amps':ampsElement.text,'watts':wattsElement.text}
+                    return {'amps':float(ampsElement.text),'watts':float(wattsElement.text)}
 
           return {'amps':-1.,'watts':-1.}
 
